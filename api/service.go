@@ -4,7 +4,7 @@ import{
 	"errors"
 
 	"github.com/twilio/twilio-go"
-	"ggithub.com/twilio/twilio-go/rest/verify/v2"
+	"github.com/twilio/twilio-go/rest/verify/v2"
 }
 var client *twilio.RestClient=twilio.NewRestClientWithParams(twilio.ClientParams{
 	Username:envACCOUNTSID(),
