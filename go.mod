@@ -1,4 +1,4 @@
-module ggithub.com/imshubham024/emailVerify
+module github.com/imshubham024/go-emailVerify
 
 go 1.25.1
 

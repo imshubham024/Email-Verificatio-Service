@@ -7,7 +7,7 @@ import (
 
 func main() {
 	router := gin.Default()
-	//initialize the config
+	// initialize the config
 	app := api.Config{Router: router}
 	app.Routes()
 	router.Run(":8082")

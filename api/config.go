@@ -5,10 +5,10 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
+	
 )
 
 func envACCOUNTSID() string {
-	println(godotenv.Unmarshal(".env"))
 	err := godotenv.Load(".env")
 	if err != nil {
 		log.Fatalln("Error in loading the env file")
