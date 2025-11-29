@@ -17,10 +17,10 @@ var validate = validator.New()
 
 
 func (app *Config) validateBody(c *gin.Context, data interface{}) error {
-	if err := c.BindJSON(data); err != nil {
+	if err := c.BindJSON(&data); err != nil {
 		return err
 	}
-	if err := validate.Struct(data); err != nil {
+	if err := validate.Struct(&data); err != nil {
 		return err
 	}
 	return nil
