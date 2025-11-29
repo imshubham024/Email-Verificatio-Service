@@ -23,7 +23,7 @@ func (app *Config) twilioSendOTP(phoneNumber string) (string,error) {
 }
 
 func (app *Config) twilioVerifyOTP(phoneNumber string,code string) error{
-	params:=&twilioApiCreateVerificationCheckParams{}
+	params := &verify.CreateVerificationCheckParams{}
 	params.SetTo(phoneNumber)
 	params.SetCode(code)
 	res,err:=client.VerifyV2.CreateVerificationCheck(envSERVICESID(),params)
